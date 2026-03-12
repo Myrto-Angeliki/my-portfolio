@@ -216,13 +216,14 @@ li.skills-card:hover::after {
 
 .open #main {
         transition: margin-left .5s;
-        margin-left: 250px;
+        padding: 250px;
 }
 
 #main {
   transition: margin-left .5s;
-  margin-left: 0px;
+  padding: 0px;
 }
+
 
 
 
