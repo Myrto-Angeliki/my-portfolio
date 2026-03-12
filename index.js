@@ -1,5 +1,5 @@
 
-function openNav(manu) {
+function openNav(menu) {
   menu.classList.toggle('open');
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
