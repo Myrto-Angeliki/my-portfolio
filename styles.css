@@ -219,14 +219,15 @@ body.menu-open .mobile-menu {
 }
         
 body.menu-open #main {
-  margin-left: 250px;
-  opacity: 0.2;
+  margin-left: 210px;
+  background-color: rgba(201, 76, 76, 0.3);
 }
 
 #main {
   transition: margin-left 0.5s ease;
   margin-left: 0;
 }
+
 
 
 
