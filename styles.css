@@ -184,19 +184,18 @@ li.skills-card:hover::after {
   transform: rotate(45deg) translate(-6px, -8px);
 }
 
-.open .mobile-menu {
-  display: block;
-  align-items: left;
-}
-
 .mobile-menu {
   display: none;
   position: absolute;
   top: 70px;
   left: 0;
-  height: calc(100vh - 50px);
   width: 250px;
-  padding: 20px
+  background: #021B79;
+  padding: 20px;
+}
+
+.open .mobile-menu {
+  display: block;
 }
 
 .mobile-menu li {
@@ -211,16 +210,19 @@ li.skills-card:hover::after {
   #hamburger-icon {
     display: block;
   }
-
-
-#main {
-  transition: margin-left 0.5s;
-  margin-left: 0;
 }
-
+        
 body.open #main {
   margin-left: 250px;
 }
+
+#main {
+  transition: margin-left 0.5s ease;
+  margin-left: 0;
+}
+
+
+
 
 
 
