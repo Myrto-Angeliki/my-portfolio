@@ -191,7 +191,6 @@ li.skills-card:hover::after {
   left: 0;
   width: 250px;
   height: 100vh;
-  background: #021B79;
   padding: 80px 20px;
   list-style: none;
 }
@@ -226,6 +225,7 @@ body.menu-open #main {
   transition: margin-left 0.5s ease;
   margin-left: 0;
 }
+
 
 
 
