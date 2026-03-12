@@ -212,4 +212,9 @@ li.skills-card:hover::after {
   #hamburger-icon {
     display: block;
   }
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
 }
+
