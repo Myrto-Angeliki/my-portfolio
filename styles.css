@@ -214,15 +214,15 @@ li.skills-card:hover::after {
   }
 
 
-.open #main {
-        transition: margin-left .5s;
-        padding: 250px;
+#main {
+  transition: margin-left 0.5s;
+  margin-left: 0;
 }
 
-#main {
-  transition: margin-left .5s;
-  padding: 0px;
+.open #main {
+  margin-left: 250px;
 }
+
 
 
 
