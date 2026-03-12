@@ -187,17 +187,17 @@ li.skills-card:hover::after {
 .mobile-menu {
   display: none;
   position: fixed;
-  top: 30px;
+  top: 50px;
   left: 0;
-  width: 250px;
-  height: 100vh;
-  padding: 80px 20px;
-  background-color: white;
+  height: calc(100vh - 50px);
   list-style: none;
 }
 
 .open .mobile-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .mobile-menu li {
@@ -226,6 +226,7 @@ body.menu-open #main {
   transition: margin-left 0.5s ease;
   margin-left: 0;
 }
+
 
 
 
