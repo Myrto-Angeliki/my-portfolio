@@ -36,7 +36,8 @@ header{
 }
 
 .logo {
-  margin: 0;
+    font-size:x-large;
+    margin: 0;
 }
 
 /* LINKS */
@@ -145,6 +146,10 @@ header{
   #top-btn {
     bottom: 20px;
     right: 20px;
+  }
+
+  .logo {
+    font-size:medium;
   }
 }
 
