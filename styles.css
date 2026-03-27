@@ -150,6 +150,33 @@ header{
         color:white;
     }
 
+#top-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 90%;
+  z-index: 1000;
+
+  background-color: rgb(60, 109, 208);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+
+  cursor: pointer;
+  display: none;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#top-btn:hover {
+  transform: scale(1.1);
+}
+
+
 a {
 color: rgb(60, 109, 208);
     font-size: 1.3rem;
