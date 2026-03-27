@@ -17,7 +17,7 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 200) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     scrollBtn.style.display = "block";
   } else {
     scrollBtn.style.display = "none";
