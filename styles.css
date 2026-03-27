@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
         margin:0;
         font-family: Arial, sans-serif;
@@ -5,30 +9,104 @@ body{
         color:#333;
     }
 
-    header{
+header{
         background: #021B79;
         color:white;
         padding:20px;
     }
 
-    nav{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        max-width:1000px;
-        margin:auto;
-    }
+/* NAVBAR BASE */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #021B79;
+  color: white;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    nav ul{
-        list-style:none;
-        display:flex;
-        gap:20px;
-    }
+.logo {
+  margin: 0;
+}
 
-    nav a{
-        color:white;
-        text-decoration:none;
-    }
+/* LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+.nav-links {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 85%;
+  background: #021B79;
+
+  flex-direction: column;
+  align-items:flex-start;
+
+  max-height: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: max-height 0.3s ease;
+}
+
+.nav-links.open {
+  max-height: 80vh;
+}
+
+  .nav-links li {
+    padding: 15px 0;
+  }
+}
 
     p.normal {
         line-height: 1.5;
@@ -156,76 +234,9 @@ li.skills-card:hover::after {
     transform: translateX(15%);
 
 }
-#hamburger-icon {
-  margin: auto 0;
-  display: none;
-  cursor: pointer;
-}
 
-#hamburger-icon div {
-  width: 35px;
-  height: 3px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.open .bar2 {
-  opacity: 0;
-}
-
-.open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-6px, -8px);
-  transform: rotate(45deg) translate(-6px, -8px);
-}
-
-.mobile-menu {
-  display: none;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  height: calc(100vh - 50px);
-  list-style: none;
-}
-
-.open .mobile-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.mobile-menu li {
-  margin-bottom: 20px;
-}
-
-body.menu-open .mobile-menu {
-  display: block;
-}
-
-@media only screen and (max-width: 600px) {
-  header nav {
-    display: none;
-  }
-
-  #hamburger-icon {
-    display: block;
-  }
-}
         
-body.menu-open #main {
-  margin-left: 210px;
-}
 
-#main {
-  transition: margin-left 0.5s ease;
-  margin-left: 0;
-}
 
 
 
