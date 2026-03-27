@@ -17,7 +17,8 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 
 
 window.addEventListener("scroll", () => {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  const scrollPos = window.scrollY || document.documentElement.scrollTop;
+  if (scrollPos > 200) {
     scrollBtn.style.display = "block";
   } else {
     scrollBtn.style.display = "none";
@@ -25,6 +26,5 @@ window.addEventListener("scroll", () => {
 });
 
 scrollBtn.addEventListener("click", () => {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0;
+  window.scrollTo(0,0);
 });
