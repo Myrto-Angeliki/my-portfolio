@@ -106,7 +106,7 @@ header{
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hamburger {
     display: block;
   }
@@ -137,7 +137,21 @@ header{
 
   #top-btn {
     bottom: 15px;
-    right: max(15px, env(safe-area-inset-right));
+    right: 25%;
+  }
+}
+
+@media (max-width: 425px) {
+    #top-btn {
+    bottom: 15px;
+    right: 31%;
+  }
+}
+
+@media (max-width: 320px) {
+    #top-btn {
+    bottom: 15px;
+    right: 38%;
   }
 }
 
