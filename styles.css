@@ -203,7 +203,7 @@ li.skills-card {
     justify-content: center;  
     
     padding: 10px 15px;
-    margin: 2px; 
+    margin: 0; 
     
     background: rgb(33, 33, 33);
     position: relative;
@@ -242,7 +242,6 @@ li.skills-card:hover::after {
     transform: translateX(15%);
 
 }
-
 
 footer{
     text-align:center;
