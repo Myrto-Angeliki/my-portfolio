@@ -201,11 +201,11 @@ header{
 
     .contact a img {
       width: clamp(40px, 8vw, 120px);
+      transition: transform 0.3s ease;
+    }
 
-      &:hover{
-        transform: scale(1.1);
-      }
-
+    .contact a img:hover{
+      transform: scale(1.1);
     }
 
 div.skills-cards{
