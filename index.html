@@ -1,181 +1,248 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angeliki Myrto Kokora | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Angeliki Myrto Kokora, Computer Science Engineering Graduate.">
+  <title>Angeliki Myrto Kokora | CS Graduate Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
-
-
 <body>
-    <button id="top-btn">^</button>
-<header>
-    <nav class="navbar">
-        <h2 class="logo">Angeliki Myrto Kokora</h2>
-        <button class="hamburger" id="hamburger">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </button>
-        <ul class="nav-links" id="nav-links">
-            <li><a class="links-1" id="nav" href="#about">About</a></li>
-            <li><a class="links-1" id="nav" href="#certificates">Certificates</a></li>
-            <li><a class="links-1" id="nav" href="#projects">Projects</a></li>
-            <li><a class="links-1" id="nav" href="#skills">Skills</a></li>
-            <li><a class="links-1" id="nav" href="#contact">Contact</a></li>
-        </ul>
-  </nav>
-</header>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">AMK<span>.</span></a>
 
-<div id="main">
+      <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false"
+        aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
 
-    <section class="hero">
-        <h1>Hello, I'm Angeliki Myrto Kokora</h1>
-        <p>Computer Science Engineering Graduate | Programmer | Tech Enthusiast</p>
-        <p><img src="images/email-1573-svgrepo-com.svg" style="vertical-align:middle" width="25px"> &nbsp; kokoramyrto@gmail.com</p>
-    </section>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p class="normal">
-            I graduated from the Computer Science and Enginnering Department of the University of Ioannina. 
-            I am a hardworking individual who enjoys challenges, and I am looking for
-            career opportunities that will allow me to expand my knowledge of computer science and electronics, 
-            use my skills, and work with different people to achieve a common goal.
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image-wrap">
+        <div class="photo-placeholder">
+          <img src="images/profile.jpg" alt="Angeliki Myrto Kokora">
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">COMPUTER SCIENCE & ENGINEERING GRADUATE</p>
+        <h1>Hello, I'm <span>Angeliki Myrto Kokora</span>.</h1>
+        <p class="hero-description">
+          Programmer and technology enthusiast with an interest in software development,
+          computer architecture, digital design and electronics.
         </p>
-    </section>
-
-    <section id="certificates">
-        <h2>Certificates</h2>
-        <ul id="image">
-            <li>
-                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-312f10fa-21cf-432e-bdba-1b742ae5fe23.pdf">Verification Series Part 1: SystemVerilog Essentials</a>    
-            </li>
-            <li>
-                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-3aa11f2d-09b8-46b4-bb92-a845e46820dc.pdf">Design Verification with SystemVerilog/UVM</a>
-            </li>
-            <li>
-                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-99d21723-18e1-4636-b1a4-b4118490e3c7.pdf">Qt 6 Core Beginners with C++</a>
-            </li>
-            <li>
-                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-823a5c2f-32bb-47f4-8e1b-d4f2bf7482fb.pdf">C# .NET with MS SQL Complete Beginner to Master 2026</a>
-            </li>
-        </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-    
-        <div class="projects">
-            <div class="project-card">
-                <h3>.NET Forum Project</h3>
-                <p>A forum application backend built with .NET 10, following Clean Architecture principles and exposing a REST API. 
-                   The solution separates concerns across Domain, Application, Infrastructure, and API layers.</p>
-                <br>
-                <a class="links-1" id="normal" href="https://github.com/Myrto-Angeliki/ForumProject">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Qt File Analyzer Project</h3>
-                <p>Personal project where I developed a multithreaded desktop file analyzer in C++ and 
-                   Qt with asynchronous file analysis to keep the UI responsive during processing.</p>
-                <br>
-                <a class="links-1" id="normal" href="https://github.com/Myrto-Angeliki/qt-file-analyzer">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Microprocessors course projects</h3>
-                <p>a) Python programs that perform operations regarding the signal probabilities 
-                    and switching activity of a circuit, and b) design of a custom cpu architecture in Verilog.</p>
-                <a class="links-1" id="normal" href="https://github.com/Myrto-Angeliki/Microprocessors_Course_Labs">View Project</a>
-            </div>
-    
-            <div class="project-card">
-                <h3>Electronic System Testing and Reliability course projects</h3>
-                <p>Addition of Built-in Self-Test (BIST) capabilities to a Circuit under Test (CUT) (in Verilog).</p>
-                <br>
-                <a class="links-1" id="normal" href="https://github.com/Myrto-Angeliki/Electronic_System_Testing_and_Reliability">View Project</a>
-            </div>
-    
-            <div class="project-card">
-                <h3>Digital Design II course projects</h3>
-                <p>Projects written in VHDL that perform specific operations:   a) multiplcation of binary numbers, 
-                                                                                b) sorting of a vector, 
-                                                                                c) multiplication of 4-bit element vectors</p>
-                <a class="links-1" id="normal" href="https://github.com/Myrto-Angeliki/VHDL_LAB_PROJECTS">View Project</a>
-            </div>
-    
-            <div class="project-card">
-                <h3>Compilers course project</h3>
-                <p>A Compiler written in Python that converts a program written in a custom language to RISC-V assembly.</p>
-                <br><br>
-                <a class="links-1" id="normal" href="https://github.com/Myrto-Angeliki/Cpy_Compiler">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Compilers II course project</h3>
-                <p>This project is a compiler/translator that converts source code written in a custom object-oriented language into standard C code.</p>
-                <br><br>
-                <a class="links-1" id="normal" href="https://github.com/Myrto-Angeliki/compiler-simplepp-to-c.git">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Software Engineering course project</h3>
-                <p>This project is a web application for managing diploma thesis projects made with the Spring framework.</p>
-                <br><br>
-                <a class="links-1" id="normal" href="https://github.com/Myrto-Angeliki/Spring_Web_application_project">View Project</a>
-            </div>
-    
+        <p class="hero-description">
+          I enjoy challenging problems, learning new technologies and building projects
+          that bring software and hardware concepts together.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my projects</a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
         </div>
+      </div>
     </section>
-    
-    <section id="skills">
-        <h2 >Skills</h2><br>
-  
-        <div class="skills-cards">
-            <div>
-                <ul>
-                    <li class="skills-card">VHDL</li>
-                    <li class="skills-card">Verilog, SystemVerilog</li>
-                    <li class="skills-card">RISC-V ISA, MIPS ISA</li>
-                    <li class="skills-card">Arduino Uno</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li class="skills-card">Python</li>
-                    <li class="skills-card">Java</li>
-                    <li class="skills-card">C, C#, C++</li>
-                    <li class="skills-card">Qt 6</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li class="skills-card">HTML</li>
-                    <li class="skills-card">CSS</li>
-                    <li class="skills-card">JavaScript</li>
-                    <li class="skills-card">Spring Framework, .NET</li>
-                </ul>
-            </div>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2>A curious engineer who enjoys solving problems.</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          I graduated from the Computer Science and Engineering Department of the
+          University of Ioannina. I am a hardworking individual who enjoys challenges
+          and I am looking for career opportunities that will allow me to expand my
+          knowledge of computer science and electronics, use my skills, and work with
+          different people to achieve a common goal.
+        </p>
+        <div class="focus-list">
+          <div><span>01</span><strong>Software</strong><small>C#, C++, Python, Java</small></div>
+          <div><span>02</span><strong>Systems</strong><small>.NET, Spring, REST APIs, Qt</small></div>
+          <div><span>03</span><strong>Hardware</strong><small>VHDL, Verilog, SystemVerilog</small></div>
         </div>
+      </div>
     </section>
-    <br><br>
-    <section id="contact" >
-        <h2>Contact</h2>
-        <br>
-        <div class="contact">
-        <div><a href="mailto:kokoramyrto@gmail.com"><img src="images/email-1573-svgrepo-com.svg" width="110px"></a></div>
-        <div><a href="https://www.linkedin.com/in/angeliki-myrto-k-30376a30b/"><img src="images/LI-In-Bug.png" width="115px"></a></div>
-        <div><a href="https://github.com/Myrto-Angeliki"><img src="images/GitHub_Invertocat_Black.svg"></a></div>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Projects I've built and studied.</h2>
+        <p>Open a project to see its technologies, purpose and implementation details.</p>
+      </div>
+
+      <div class="projects-grid">
+        <a class="project-card featured" href="projects/forum-project.html">
+          <div class="project-top"><span class="project-number">01</span><span class="arrow">↗</span></div>
+          <h3>.NET Forum Project</h3>
+          <p>A forum application backend built with .NET 10, following Clean Architecture principles and exposing a REST
+            API.</p>
+          <div class="tech-icons" aria-label="Technologies: C Sharp, .NET">
+            <span><i class="devicon-csharp-plain"></i>C#</span>
+            <span><b>.NET</b></span>
+            <span><b>REST</b></span>
+          </div>
+        </a>
+
+        <a class="project-card" href="projects/qt-file-analyzer.html">
+          <div class="project-top"><span class="project-number">02</span><span class="arrow">↗</span></div>
+          <h3>Qt File Analyzer</h3>
+          <p>A multithreaded desktop file analyzer in C++ and Qt with asynchronous processing to keep the UI responsive.
+          </p>
+          <div class="tech-icons" aria-label="Technologies: C++, Qt">
+            <span><i class="devicon-cplusplus-plain"></i>C++</span>
+            <span><i class="devicon-qt-original"></i>Qt</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="projects/microprocessors.html">
+          <div class="project-top"><span class="project-number">03</span><span class="arrow">↗</span></div>
+          <h3>Microprocessors Course Projects</h3>
+          <p>Python programs for signal probabilities and switching activity, plus a custom CPU architecture in Verilog.
+          </p>
+          <div class="tech-icons">
+            <span><i class="devicon-python-plain"></i>Python</span>
+            <span><b>Verilog</b></span>
+            <span><b>CPU</b></span>
+          </div>
+        </a>
+
+        <a class="project-card" href="projects/electronic-testing.html">
+          <div class="project-top"><span class="project-number">04</span><span class="arrow">↗</span></div>
+          <h3>Electronic System Testing & Reliability</h3>
+          <p>Addition of Built-in Self-Test (BIST) capabilities to a Circuit Under Test (CUT).</p>
+          <div class="tech-icons">
+            <span><b>Verilog</b></span>
+            <span><b>BIST</b></span>
+            <span><b>RTL</b></span>
+          </div>
+        </a>
+
+        <a class="project-card" href="projects/digital-design.html">
+          <div class="project-top"><span class="project-number">05</span><span class="arrow">↗</span></div>
+          <h3>Digital Design II</h3>
+          <p>VHDL projects covering binary multiplication, vector sorting and multiplication of 4-bit element vectors.
+          </p>
+          <div class="tech-icons">
+            <span><b>VHDL</b></span>
+            <span><b>RTL</b></span>
+            <span><b>Digital Logic</b></span>
+          </div>
+        </a>
+
+        <a class="project-card" href="projects/cpy-compiler.html">
+          <div class="project-top"><span class="project-number">06</span><span class="arrow">↗</span></div>
+          <h3>Compilers Course Project</h3>
+          <p>A compiler written in Python that converts a program in a custom language to RISC-V assembly.</p>
+          <div class="tech-icons">
+            <span><i class="devicon-python-plain"></i>Python</span>
+            <span><b>RISC-V</b></span>
+            <span><b>Compiler</b></span>
+          </div>
+        </a>
+
+        <a class="project-card" href="projects/simplepp-to-c.html">
+          <div class="project-top"><span class="project-number">07</span><span class="arrow">↗</span></div>
+          <h3>Compilers II</h3>
+          <p>A compiler/translator that converts source code in a custom object-oriented language into standard C code.
+          </p>
+          <div class="tech-icons">
+            <span><i class="devicon-c-original"></i></span>
+            <span><b>Compiler</b></span>
+            <span><b>OOP</b></span>
+          </div>
+        </a>
+
+        <a class="project-card" href="projects/spring-web-app.html">
+          <div class="project-top"><span class="project-number">08</span><span class="arrow">↗</span></div>
+          <h3>Software Engineering Project</h3>
+          <p>A web application for managing diploma thesis projects made with the Spring framework.</p>
+          <div class="tech-icons">
+            <span><i class="devicon-java-plain"></i>Java</span>
+            <span><b>Spring</b></span>
+            <span><b>Web</b></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section certificates-section" id="certificates">
+      <div class="section-heading">
+        <p class="eyebrow">LEARNING</p>
+        <h2>Certificates & continued learning.</h2>
+      </div>
+      <div class="certificate-grid">
+        <a class="certificate-card"
+          href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-312f10fa-21cf-432e-bdba-1b742ae5fe23.pdf"
+          target="_blank" rel="noopener">
+          <span>01</span>
+          <div><strong>Verification Series Part 1: SystemVerilog Essentials</strong><small>View certificate ↗</small>
+          </div>
+        </a>
+        <a class="certificate-card"
+          href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-3aa11f2d-09b8-46b4-bb92-a845e46820dc.pdf"
+          target="_blank" rel="noopener">
+          <span>02</span>
+          <div><strong>Design Verification with SystemVerilog/UVM</strong><small>View certificate ↗</small></div>
+        </a>
+        <a class="certificate-card"
+          href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-99d21723-18e1-4636-b1a4-b4118490e3c7.pdf"
+          target="_blank" rel="noopener">
+          <span>03</span>
+          <div><strong>Qt 6 Core Beginners with C++</strong><small>View certificate ↗</small></div>
+        </a>
+        <a class="certificate-card"
+          href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-823a5c2f-32bb-47f4-8e1b-d4f2bf7482fb.pdf"
+          target="_blank" rel="noopener">
+          <span>04</span>
+          <div><strong>C# .NET with MS SQL Complete Beginner to Master 2026</strong><small>View certificate ↗</small>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h2>Let's connect.</h2>
+          <p>If you'd like to discuss a project, an opportunity or simply say hello, feel free to reach out.</p>
         </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:kokoramyrto@gmail.com">Email me</a>
+          <a class="social-link" href="https://www.linkedin.com/in/angeliki-myrto-k-30376a30b/" target="_blank"
+            rel="noopener" aria-label="LinkedIn">in</a>
+          <a class="social-link" href="https://github.com/Myrto-Angeliki" target="_blank" rel="noopener"
+            aria-label="GitHub">GH</a>
+        </div>
+      </div>
     </section>
-    
-    <footer>
-        <p>© 2026 Angeliki Myrto Kokora</p>
-    </footer>
-</div>
-<script src="index.js"></script>
+  </main>
+
+  <button id="top-btn" aria-label="Back to top">↑</button>
+
+  <footer>
+    <p>© 2026 Angeliki Myrto Kokora</p>
+    <div>
+      <a href="https://github.com/Myrto-Angeliki" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/angeliki-myrto-k-30376a30b/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 
 </html>

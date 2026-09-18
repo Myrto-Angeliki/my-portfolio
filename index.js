@@ -2,29 +2,31 @@ const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
 const scrollBtn = document.getElementById("top-btn");
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("open");   
-  navLinks.classList.toggle("open");   
-});
-
-
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    hamburger.classList.remove("open");
+if (hamburger && navLinks) {
+  hamburger.addEventListener("click", () => {
+    const isOpen = hamburger.classList.toggle("open");
+    navLinks.classList.toggle("open");
+    hamburger.setAttribute("aria-expanded", String(isOpen));
   });
-});
 
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      hamburger.classList.remove("open");
+      hamburger.setAttribute("aria-expanded", "false");
+    });
+  });
+}
 
-window.addEventListener("scroll", () => {
-  const scrollPos = window.scrollY || document.documentElement.scrollTop;
-  if (scrollPos > 200) {
-    scrollBtn.style.display = "block";
-  } else {
-    scrollBtn.style.display = "none";
-  }
-});
+if (scrollBtn) {
+  const updateScrollButton = () => {
+    scrollBtn.classList.toggle("show", window.scrollY > 400);
+  };
 
-scrollBtn.addEventListener("click", () => {
-  window.scrollTo(0,0);
-});
+  window.addEventListener("scroll", updateScrollButton, { passive: true });
+  updateScrollButton();
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
