@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,13 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
+
 <body>
   <header class="site-header">
     <nav class="navbar" aria-label="Main navigation">
       <a class="brand" href="../index.html">AMK<span>.</span></a>
-      <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+      <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false"
+        aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-links">
@@ -30,22 +33,201 @@
       <a class="back-link" href="../index.html#projects">← Back to projects</a>
       <p class="eyebrow" style="margin-top:34px;">PROJECT 01</p>
       <h1>.NET Forum Project</h1>
-      <p>A forum application backend built with .NET 10, following Clean Architecture principles and exposing a REST API. The solution separates concerns across Domain, Application, Infrastructure and API layers.</p>
+      <p>A forum application backend built with .NET 10, following Clean Architecture principles and exposing a REST
+        API. The solution separates concerns across Domain, Application, Infrastructure and API layers.</p>
     </section>
 
     <section class="detail-content">
       <article>
         <h2>About the project</h2>
-        <p>The project is structured around clear separation of responsibilities. The API layer exposes the application through HTTP endpoints, while the other layers isolate domain logic, application behavior and infrastructure concerns.</p>
-        <p>This project demonstrates backend development, API design and architectural organization in a modern .NET application.</p>
+        <p>The project is structured around clear separation of responsibilities. The API layer exposes the application
+          through HTTP endpoints, while the other layers isolate domain logic, application behavior and infrastructure
+          concerns.</p>
+        <p>This project demonstrates backend development, API design and architectural organization in a modern .NET
+          application.</p>
         <!-- <h2 style="margin-top:45px;">What I worked with</h2>
         <p>The technologies and concepts below are the main ones associated with this project. </p> -->
-        <a class="button button-primary repo-button" href="https://github.com/Myrto-Angeliki/ForumProject" target="_blank" rel="noopener">View repository on GitHub ↗</a>
+        <h2>Backend Documentation</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Endpoint</th>
+              <th style="text-align: left;">Method</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>/api/auth/register</code></td>
+              <td><code>POST</code></td>
+              <td>Create a new user</td>
+            </tr>
+            <tr>
+              <td><code>/api/auth/login</code></td>
+              <td><code>POST</code></td>
+              <td>Login an existing user</td>
+            </tr>
+            <tr>
+              <td><code>/api/auth/password</code></td>
+              <td><code>PUT</code></td>
+              <td>Change the password of an authorized user</td>
+            </tr>
+            <tr>
+              <td><code>/api/auth/token</code></td>
+              <td><code>GET</code></td>
+              <td>Refresh the user's token</td>
+            </tr>
+            <tr>
+              <td><code>/api/users</code></td>
+              <td><code>GET</code></td>
+              <td>List all users</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/{userId}</code></td>
+              <td><code>GET</code></td>
+              <td>Get specific user details</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/by-email?email={userEmail}</code></td>
+              <td><code>GET</code></td>
+              <td>Get specific user details</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/by-username</code></td>
+              <td><code>GET</code></td>
+              <td>Get specific user details</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/me/friends</code></td>
+              <td><code>GET</code></td>
+              <td>List the current user's friends</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/me/status</code></td>
+              <td><code>PATCH</code></td>
+              <td>Update the current user's status</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/me/email</code></td>
+              <td><code>PATCH</code></td>
+              <td>Update the current user's email</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/me/username</code></td>
+              <td><code>PATCH</code></td>
+              <td>Update the current user's username</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/me/friends/{friendId}</code></td>
+              <td><code>DELETE</code></td>
+              <td>Remove a user from the current user's friend list</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/me/posts</code></td>
+              <td><code>GET</code></td>
+              <td>List all the posts created by the current user</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/me/comments</code></td>
+              <td><code>GET</code></td>
+              <td>List all the comments made by the current user</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/me/posts/{postId:int}</code></td>
+              <td><code>DELETE</code></td>
+              <td>Delete a specific post created by the current user</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/me/comments/{commentId}</code></td>
+              <td><code>DELETE</code></td>
+              <td>Delete a specific comment made by the current user</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/me/friend-requests/{senderId}/accept</code></td>
+              <td><code>PUT</code></td>
+              <td>Create a friendship between the current user and the sender of the friend request</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/me/friend-requests/{senderId}/deny</code></td>
+              <td><code>DELETE</code></td>
+              <td>Remove a friend request from the current user's friend request list</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/me/friend-requests/{recipientId}</code></td>
+              <td><code>POST</code></td>
+              <td>Create a new friend request from the current user to another one</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/me/friend-requests/{recipientId}</code></td>
+              <td><code>DELETE</code></td>
+              <td>Delete the friend request sent from the current user to a different user</td>
+            </tr>
+            <tr>
+              <td><code>/api/users/{userId}</code></td>
+              <td><code>DELETE</code></td>
+              <td>Delete a user</td>
+            </tr>
+            <tr>
+              <td><code>/api/posts</code></td>
+              <td><code>GET</code></td>
+              <td>List all posts</td>
+            </tr>
+            <tr>
+              <td><code>/api/posts/{postId}</code></td>
+              <td><code>GET</code></td>
+              <td>Get a specific post's details</td>
+            </tr>
+            <tr>
+              <td><code>/api/posts/by-user/{userId}</code></td>
+              <td><code>GET</code></td>
+              <td>Get the posts created by a specific user</td>
+            </tr>
+            <tr>
+              <td><code>/api/posts</code></td>
+              <td><code>POST</code></td>
+              <td>Create a new post</td>
+            </tr>
+            <tr>
+              <td><code>/api/posts/{postId}</code></td>
+              <td><code>PUT</code></td>
+              <td>Edit an existing post by the current user</td>
+            </tr>
+            <tr>
+              <td><code>/api/posts/{postId}/comments/{commentId}</code></td>
+              <td><code>GET</code></td>
+              <td>Get the details of a comment under a specific post</td>
+            </tr>
+            <tr>
+              <td><code>/api/posts/{postId}/comments</code></td>
+              <td><code>GET</code></td>
+              <td>List all the comments under a specific post</td>
+            </tr>
+            <tr>
+              <td><code>/api/posts/{postId}/comments</code></td>
+              <td><code>POST</code></td>
+              <td>Create a new comment under a specific post</td>
+            </tr>
+            <tr>
+              <td><code>/api/posts/{postId:int}/comments/{commentId:int}</code></td>
+              <td><code>PUT</code></td>
+              <td>Update an existing comment under a specific post if it belongs to the current user</td>
+            </tr>
+            <tr>
+              <td><code>/api/posts/{postId:int}/comments/{commentId}</code></td>
+              <td><code>DELETE</code></td>
+              <td>Delete a comment under a specific post if it belongs to the current user</td>
+            </tr>
+          </tbody>
+        </table>
+        <br /> <br /> <hr /> <br />
+        <a class="button button-primary repo-button" href="https://github.com/Myrto-Angeliki/ForumProject"
+          target="_blank" rel="noopener">View repository on GitHub ↗</a>
       </article>
 
       <aside class="detail-sidebar">
         <h3>Technologies</h3>
-        <div class="tech-icons"><span><b>C#</b></span><span><b>.NET 10</b></span><span><b>REST API</b></span><span><b>Clean Architecture</b></span></div>
+        <div class="tech-icons"><span><b>C#</b></span><span><b>.NET 10</b></span><span><b>REST
+              API</b></span><span><b>Clean Architecture</b></span></div>
       </aside>
     </section>
   </main>
@@ -60,4 +242,5 @@
 
   <script src="../index.js"></script>
 </body>
+
 </html>
