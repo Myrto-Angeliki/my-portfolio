@@ -554,7 +554,8 @@ main {
 }
 
 footer {
-  padding: 30px 24px;
+  padding: 30px 84px ;
+  /* padding-bottom: 50px; */
   background: #0c2346;
   color: #bfcde0;
   display: flex;
