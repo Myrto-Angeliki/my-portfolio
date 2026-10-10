@@ -70,12 +70,26 @@
           different people to achieve a common goal.
         </p>
         <div class="focus-list">
-          <div><span>01</span><strong>Languages</strong><small>C#, C++, C, Python, Java, JS/TS</small></div>
-          <div><span>02</span><strong>Systems</strong><small>.NET, Spring, Node.js, REST APIs, Qt</small></div>
-          <div><span>03</span><strong>Web & Tools</strong><small>React, Vite, HTML/CSS</small></div>
-          <div><span>04</span><strong>Hardware</strong><small>VHDL, Verilog, SystemVerilog</small></div>
-        </div>
-      </div>
+          <div>
+            <br />
+            <section>
+              <h3>Software</h3>
+              <p><span>01 </span><strong>Languages </strong><br /><small>C#, C++, C, Python, Java, JavaScript</small> </p>
+              <p><span>02 </span><strong>Systems </strong><br /><small>.NET, Spring, Node.js, REST APIs, Qt</small> </p>
+              <p><span>03 </span><strong>Web & Tools </strong><br /><small>React, Vite, HTML/CSS</small></p>
+              <p> <span>04 </span><strong>Databases & Data Access</strong><br /> <small>SQL, SQL Server, Entity Framework, Dapper, Hibernate</small> </p>
+            </section>
+          </div>
+          <div>
+            <br />
+            <section>
+              <h3>Hardware & Embedded Systems</h3>
+              <p><span>01 </span><strong>Digital Design & Verification </strong><br /><small>VHDL, Verilog, SystemVerilog, UVM</small> </p>
+              <p><span>02 </span><strong>PCB Design & Circuit Simulation </strong><br /><small>KiCad, LTspice, Schematic Capture, PCB Layout Design</small> </p>
+              <p><span>03 </span><strong>Integrated Circuit Design </strong><br /><small>Cadence Virtuoso, IC Schematic Design, IC Layout</small></p>
+              <p><span>04 </span><strong>Laboratory & Hardware Testing </strong><br /><small>Oscilloscopes, Digital Multimeters (DMMs), Bench Power Supplies, Function Generators, Circuit Debugging & Measurement</small></p>
+            </section>
+          </div>
     </section>
 
     <section class="section projects-section" id="projects">
@@ -84,10 +98,22 @@
         <h2>Projects I've built and studied.</h2>
         <p>Open a project to see its technologies, purpose and implementation details.</p>
       </div>
-
       <div class="projects-grid">
-        <a class="project-card featured" href="projects/forum-project.html">
+
+        <a class="project-card featured" href="projects/analog-filter.html">
           <div class="project-top"><span class="project-number">01</span><span class="arrow">↗</span></div>
+          <h3>Analog Filter Module</h3>
+          <p>PCB design of an analog signal conditioning module with a Sallen-Key Low-Pass Filter
+            and LDO regulator.</p>
+          <div class="tech-icons" aria-label="Technologies: C Sharp, .NET">
+            <span><img src="../images/kicad-light.svg" width="54" height="34px" /></span>
+            <span><img src="../images/ltspice-light.svg" width="34px" height="14px" />LTspice</span>
+          </div>
+        </a>
+
+
+        <a class="project-card featured" href="projects/forum-project.html">
+          <div class="project-top"><span class="project-number">02</span><span class="arrow">↗</span></div>
           <h3>.NET Forum Project</h3>
           <p>A forum application backend built with .NET 10, following Clean Architecture principles and exposing a REST
             API.</p>
@@ -98,8 +124,19 @@
           </div>
         </a>
 
+        <a class="project-card" href="projects/electronic-testing.html">
+          <div class="project-top"><span class="project-number">03</span><span class="arrow">↗</span></div>
+          <h3>Electronic System Testing & Reliability</h3>
+          <p>Addition of Built-in Self-Test (BIST) capabilities to a Circuit Under Test (CUT).</p>
+          <div class="tech-icons">
+            <span><b>Verilog</b></span>
+            <span><b>BIST</b></span>
+            <span><b>RTL</b></span>
+          </div>
+        </a>
+
         <a class="project-card featured" href="projects/react-course.html">
-          <div class="project-top"><span class="project-number">02</span><span class="arrow">↗</span></div>
+          <div class="project-top"><span class="project-number">04</span><span class="arrow">↗</span></div>
           <h3>React Course Project</h3>
           <p>Projects developed while following SuperSimpleDev's React course to which I have added my own features.</p>
           <div class="tech-icons" aria-label="Technologies: React, JavaScript">
@@ -109,19 +146,8 @@
           </div>
         </a>
 
-        <a class="project-card" href="projects/qt-file-analyzer.html">
-          <div class="project-top"><span class="project-number">03</span><span class="arrow">↗</span></div>
-          <h3>Qt File Analyzer</h3>
-          <p>A multithreaded desktop file analyzer in C++ and Qt with asynchronous processing to keep the UI responsive.
-          </p>
-          <div class="tech-icons" aria-label="Technologies: C++, Qt">
-            <span><i class="devicon-cplusplus-plain"></i>C++</span>
-            <span><i class="devicon-qt-original"></i>Qt</span>
-          </div>
-        </a>
-
         <a class="project-card" href="projects/microprocessors.html">
-          <div class="project-top"><span class="project-number">04</span><span class="arrow">↗</span></div>
+          <div class="project-top"><span class="project-number">05</span><span class="arrow">↗</span></div>
           <h3>Microprocessors Course Projects</h3>
           <p>Python programs for signal probabilities and switching activity, plus a custom CPU architecture in Verilog.
           </p>
@@ -132,19 +158,19 @@
           </div>
         </a>
 
-        <a class="project-card" href="projects/electronic-testing.html">
-          <div class="project-top"><span class="project-number">05</span><span class="arrow">↗</span></div>
-          <h3>Electronic System Testing & Reliability</h3>
-          <p>Addition of Built-in Self-Test (BIST) capabilities to a Circuit Under Test (CUT).</p>
+        <a class="project-card" href="projects/spring-web-app.html">
+          <div class="project-top"><span class="project-number">06</span><span class="arrow">↗</span></div>
+          <h3>Software Engineering Project</h3>
+          <p>A web application for managing diploma thesis projects made with the Spring framework.</p>
           <div class="tech-icons">
-            <span><b>Verilog</b></span>
-            <span><b>BIST</b></span>
-            <span><b>RTL</b></span>
+            <span><i class="devicon-java-plain"></i>Java</span>
+            <span><b>Spring</b></span>
+            <span><b>Web</b></span>
           </div>
         </a>
 
         <a class="project-card" href="projects/digital-design.html">
-          <div class="project-top"><span class="project-number">06</span><span class="arrow">↗</span></div>
+          <div class="project-top"><span class="project-number">07</span><span class="arrow">↗</span></div>
           <h3>Digital Design II</h3>
           <p>VHDL projects covering binary multiplication, vector sorting and multiplication of 4-bit element vectors.
           </p>
@@ -155,8 +181,19 @@
           </div>
         </a>
 
+        <a class="project-card" href="projects/qt-file-analyzer.html">
+          <div class="project-top"><span class="project-number">08</span><span class="arrow">↗</span></div>
+          <h3>Qt File Analyzer</h3>
+          <p>A multithreaded desktop file analyzer in C++ and Qt with asynchronous processing to keep the UI responsive.
+          </p>
+          <div class="tech-icons" aria-label="Technologies: C++, Qt">
+            <span><i class="devicon-cplusplus-plain"></i>C++</span>
+            <span><i class="devicon-qt-original"></i>Qt</span>
+          </div>
+        </a>
+
         <a class="project-card" href="projects/cpy-compiler.html">
-          <div class="project-top"><span class="project-number">07</span><span class="arrow">↗</span></div>
+          <div class="project-top"><span class="project-number">09</span><span class="arrow">↗</span></div>
           <h3>Compilers Course Project</h3>
           <p>A compiler written in Python that converts a program in a custom language to RISC-V assembly.</p>
           <div class="tech-icons">
@@ -167,8 +204,8 @@
         </a>
 
         <a class="project-card" href="projects/simplepp-to-c.html">
-          <div class="project-top"><span class="project-number">08</span><span class="arrow">↗</span></div>
-          <h3>Compilers II</h3>
+          <div class="project-top"><span class="project-number">10</span><span class="arrow">↗</span></div>
+          <h3>Compilers II Course Project</h3>
           <p>A compiler/translator that converts source code in a custom object-oriented language into standard C code.
           </p>
           <div class="tech-icons">
@@ -178,16 +215,6 @@
           </div>
         </a>
 
-        <a class="project-card" href="projects/spring-web-app.html">
-          <div class="project-top"><span class="project-number">09</span><span class="arrow">↗</span></div>
-          <h3>Software Engineering Project</h3>
-          <p>A web application for managing diploma thesis projects made with the Spring framework.</p>
-          <div class="tech-icons">
-            <span><i class="devicon-java-plain"></i>Java</span>
-            <span><b>Spring</b></span>
-            <span><b>Web</b></span>
-          </div>
-        </a>
       </div>
     </section>
 
@@ -205,21 +232,29 @@
           </div>
         </a>
         <a class="certificate-card"
-          href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-3aa11f2d-09b8-46b4-bb92-a845e46820dc.pdf"
+          href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-9284cd8d-27b1-4d3b-9398-f260a779e51f.pdf"
           target="_blank" rel="noopener">
           <span>02</span>
+          <div><strong>Verification Series Part 2: Hands-On SystemVerilog Projects</strong><small>View certificate
+              ↗</small>
+          </div>
+        </a>
+        <a class="certificate-card"
+          href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-3aa11f2d-09b8-46b4-bb92-a845e46820dc.pdf"
+          target="_blank" rel="noopener">
+          <span>03</span>
           <div><strong>Design Verification with SystemVerilog/UVM</strong><small>View certificate ↗</small></div>
         </a>
         <a class="certificate-card"
           href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-99d21723-18e1-4636-b1a4-b4118490e3c7.pdf"
           target="_blank" rel="noopener">
-          <span>03</span>
+          <span>04</span>
           <div><strong>Qt 6 Core Beginners with C++</strong><small>View certificate ↗</small></div>
         </a>
         <a class="certificate-card"
           href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-823a5c2f-32bb-47f4-8e1b-d4f2bf7482fb.pdf"
           target="_blank" rel="noopener">
-          <span>04</span>
+          <span>05</span>
           <div><strong>C# .NET with MS SQL Complete Beginner to Master 2026</strong><small>View certificate ↗</small>
           </div>
         </a>

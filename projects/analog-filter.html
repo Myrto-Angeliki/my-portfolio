@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compilers Course Project - Angeliki Myrto Kokora portfolio">
+    <title>Analog Filter | Angeliki Myrto Kokora</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="../index.html">AMK<span>.</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="nav-links">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#certificates">Certificates</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-page">
+        <section class="project-hero">
+            <a class="back-link" href="../index.html#projects">← Back to projects</a>
+            <p class="eyebrow" style="margin-top:34px;">PROJECT 01</p>
+            <h1>Analog Filter Module</h1>
+            <p>PCB design of an analog signal conditioning module with a Sallen-Key Low-Pass Filter and
+                LDO regulator.</p>
+        </section>
+
+        <section class="detail-content">
+            <article>
+                <h2>About the project</h2>
+                <p>A custom 2-layer printed circuit board (PCB) designed in KiCad for sensor signal conditioning in
+                    embedded hardware systems. This module combines a low-noise 3.3V Low-Dropout (LDO) power regulator
+                    with a 2nd-order active Sallen-Key low-pass filter (fc ≈ 1.06 kHz) and a unity-gain buffer stage
+                    to attenuate high-frequency noise prior to Analog-to-DigitalConverter (ADC) sampling.
+                </p>
+                <hr />
+                <h2>PCB Layout</h2>
+                <p>
+                <table align="center">
+                    <thead>
+                        <tr>
+                            <th scope="col">PCB Front 3D View</th>
+                            <th scope="col">PCB Back 3D View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="../images/analog_filter_module_front.png">
+                                    <img src="../images/analog_filter_module_front.png" alt="pcb-front" width=260px
+                                        height=160px>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="../images/analog_filter_module_back.png">
+                                    <img src="../images/analog_filter_module_back.png" alt="pcb-back" width=260px
+                                        height=160px>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </p>
+                <br />
+                <a class="button button-primary repo-button" href="https://github.com/Myrto-Angeliki/analog-filter"
+                    target="_blank" rel="noopener">View repository on GitHub ↗</a>
+            </article>
+
+            <aside class="detail-sidebar">
+                <h3>Technologies</h3>
+                <div class="tech-icons">
+                    <span><img src="../images/kicad-light.svg" width="64px" height="44px" /></span>
+                    <span><img src="../images/ltspice-light.svg" width="44px" height="24px" />LTspice</span>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <button id="top-btn" aria-label="Back to top">↑</button>
+
+    <footer>
+        <p>© 2026 Angeliki Myrto Kokora</p>
+        <div>
+            <a href="https://github.com/Myrto-Angeliki" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/angeliki-myrto-k-30376a30b/" target="_blank"
+                rel="noopener">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>
